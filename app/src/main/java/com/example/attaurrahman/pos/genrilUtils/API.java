@@ -126,7 +126,7 @@ public class API {
     }
 
 
-    public static void LoginApiCall(final Context context, final String strLogInEmail, final String strLogInPassword) {
+    public static void LoginApiCall(final Context context, final String strSingInMobileNum) {
 
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, Config.LOGIN_URL
@@ -161,8 +161,7 @@ public class API {
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
                 //Log.d("zmaEmail",s+strPassword);
-                params.put("email", strLogInEmail);
-                params.put("password", strLogInPassword);
+                params.put("mobile", strSingInMobileNum);
                 return params;
             }
 

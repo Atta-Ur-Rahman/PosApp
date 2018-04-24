@@ -30,29 +30,18 @@
                 android:textSize="40dp"/>
 
             <EditText
-                android:id="@+id/et_login_email"
+                android:id="@+id/et_sign_in_mobile_num"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:hint="Email"
-                android:text="attaurrahman321@gmail.com"
+                android:text="03038060226"
                 android:paddingLeft="30dp"
                 android:background="@drawable/round_back_edittext"
                 android:layout_marginTop="60dp"
                 android:focusable="false"/>
 
 
-            <EditText
-                android:id="@+id/et_login_password"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:hint="Password"
-                android:text="abc"
-                android:paddingLeft="30dp"
-                android:background="@drawable/round_back_edittext"
-                android:layout_marginTop="10dp"
-                android:inputType="textPassword"
-                android:focusable="false"
-                />
+
 
 
             <Button

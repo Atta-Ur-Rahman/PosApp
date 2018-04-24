@@ -21,17 +21,15 @@ import butterknife.ButterKnife;
 
 public class LogInFragment extends Fragment {
     View parentView;
-    @BindView(R.id.et_login_email)
-    EditText etLogInEmail;
-    @BindView(R.id.et_login_password)
-    EditText etLogInPassword;
+    @BindView(R.id.et_sign_in_mobile_num)
+    EditText etSingInMobileNum;
     @BindView(R.id.btn_login)
     Button btnLogin;
     @BindView(R.id.btn_sign_up)
     Button btnSignUp;
     @BindView(R.id.tv_forget_password)
     TextView tvForgetPassword;
-    String strEmail, strPassword;
+    String strSingInMobileNum;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -43,16 +41,14 @@ public class LogInFragment extends Fragment {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                strEmail = etLogInEmail.getText().toString();
-                strPassword = etLogInPassword.getText().toString();
+                strSingInMobileNum = etSingInMobileNum.getText().toString();
 
-                if (!Patterns.EMAIL_ADDRESS.matcher(strEmail).matches()) {
-                    etLogInEmail.setError("Please enter valid email");
 
-                } else if (strPassword.equals("") || strPassword.length() < 2) {
-                    etLogInPassword.setError("Please enter password");
-                } else {
-                    API.LoginApiCall(getActivity(), strEmail, strPassword);
+                if (strSingInMobileNum.length()==0) {
+                    etSingInMobileNum.setError("Please enter valid mobile number");
+
+                }  else {
+                    API.LoginApiCall(getActivity(), strSingInMobileNum);
                 }
             }
         });
