@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.attaurrahman.pos.fragment.SignUpFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Sign Up"
+                android:textColor="#00A0F1"
+                android:textSize="40dp"/>
+
+            <EditText
+                android:id="@+id/et_sign_up_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Email"
+                android:paddingLeft="30dp"
+                android:background="@drawable/round_back_edittext"
+                android:layout_marginTop="30dp"/>
+            <EditText
+                android:id="@+id/et_sign_up_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Phone Number"
+                android:paddingLeft="30dp"
+                android:background="@drawable/round_back_edittext"
+                android:layout_marginTop="10dp"
+                android:inputType="number"/>
+
+
+
+            <EditText
+                android:id="@+id/et_sign_up_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Password"
+                android:paddingLeft="30dp"
+                android:background="@drawable/round_back_edittext"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"/>
+
+
+            <EditText
+                android:id="@+id/et_sign_up_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Confirm Password"
+                android:paddingLeft="30dp"
+                android:background="@drawable/round_back_edittext"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"/>
+
+
+            <TextView
+                android:id="@+id/tv_sign_up_create"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Create"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:background="@drawable/round_back_create_button"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Or"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textSize="40dp"
+                android:textColor="#0497DF"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"/>
+
+
+            <com.facebook.login.widget.LoginButton
+                android:visibility="gone"
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="  connect_with_facebook" />
+
+
+            <Button
+                android:id="@+id/btn_sign_up_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Sign up with Facebook"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/facebook_logo"
+                android:paddingLeft="30dp"
+                android:paddingRight="40dp"
+                android:gravity="center"
+                android:background="@drawable/round_back_facebook"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/btn_sign_up_gmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Sign up with Gmail"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/google_plus_logo"
+                android:paddingLeft="30dp"
+                android:paddingRight="40dp"
+                android:layout_marginBottom="30sp"
+                android:gravity="center"
+                android:background="@drawable/round_back_gmail"
+                android:layout_marginTop="15dp"/>
+
+
+        </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

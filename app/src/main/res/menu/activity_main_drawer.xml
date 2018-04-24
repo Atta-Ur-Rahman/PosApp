@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_mission"
+            android:icon="@drawable/mission"
+            android:title="Mission" />
+        <item
+            android:id="@+id/nav_complete"
+            android:icon="@drawable/complete"
+            android:title="Complete" />
+        <item
+            android:id="@+id/nav_my_account"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Account" />
+
+        <item
+            android:id="@+id/nav_edit_info"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Edit Info" />
+        <item
+            android:id="@+id/nav_flow_express_terminal"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Flow Express Terminal" />
+
+    </group>
+
+
+    <item android:title="">
+        <menu>
+
+        </menu>
+
+    </item>
+
+</menu>

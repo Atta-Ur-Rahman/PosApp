@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="20sp"
+    android:layout_marginLeft="20sp"
+    tools:context="com.example.attaurrahman.pos.fragment.UserProfileFragment">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20sp"
+    android:layout_marginTop="30sp"
+    android:text="User Profile"
+    android:textSize="25dp"
+    android:textColor="#00A0F1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginTop="30sp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/round_back_edittext">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="20sp"/>
+        <TextView
+            android:id="@+id/tv_profile_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:paddingLeft="10sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginTop="30sp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/round_back_edittext">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="20sp"/>
+        <TextView
+            android:id="@+id/tv_profile_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:paddingLeft="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginTop="30sp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/round_back_edittext">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="20sp"/>
+        <TextView
+            android:id="@+id/tv_profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:paddingLeft="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginTop="30sp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/round_back_edittext">
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingLeft="20sp"/>
+        <TextView
+            android:id="@+id/tv_profile_mobile_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile number"
+            android:paddingLeft="10sp"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:text="Edit"
+        android:textStyle="bold"
+        android:background="@drawable/round_back_create_button"/>
+</LinearLayout>
